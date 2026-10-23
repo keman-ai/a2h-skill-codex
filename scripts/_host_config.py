@@ -11,6 +11,7 @@ HOST = "codex"
 # 动作 → 下场。bound 可用；degraded 换法子做；unavailable 做不到；
 # not_implemented 是**我们还没做**（宿主做得到），不许对用户说成做不到。
 OPERATIONS = {
+    'assistant.delegate': {'status': 'bound', 'enforcement': 'instruction', 'invoke': '宿主 agent 自己就是助手：按剧本用 CLI 各子命令把整件事办完'},
     'auth.login': {'status': 'bound', 'enforcement': 'instruction', 'invoke': 'a2hmarket.py auth login'},
     'auth.logout': {'status': 'bound', 'enforcement': 'instruction', 'invoke': 'a2hmarket.py auth logout'},
     'auth.status': {'status': 'bound', 'enforcement': 'instruction', 'invoke': 'a2hmarket.py auth status'},
